@@ -72,7 +72,8 @@ public class ShoppingCartTest {
                 "3 * 蔬菜 : 5.98\n" +
                 "8 * 餐巾纸 : 3.20\n" +
                 "\n" +
-                "2014.01.01\n";
+                "2014.01.01\n" +
+                "\n";
         StringProcessor processor = new StringProcessor();
         Assert.assertEquals("43.54", processor.process(input));
     }
@@ -81,7 +82,8 @@ public class ShoppingCartTest {
     public void case04() {
         String input = "\n" +
                 "\n" +
-                "2014.01.01\n";
+                "2014.01.01\n" +
+                "\n";
         StringProcessor processor = new StringProcessor();
         Assert.assertEquals("0.00", processor.process(input));
     }
@@ -97,7 +99,8 @@ public class ShoppingCartTest {
                 "8 * 餐巾纸 : 1.00\n" +
                 "3 * 蔬菜 : 10.00\n" +
                 "\n" +
-                "2013.11.11\n";
+                "2013.11.11\n" +
+                "\n";
         StringProcessor processor = new StringProcessor();
         Assert.assertEquals("856.40", processor.process(input));
     }
